@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeWebsite</title>
+    <!--/// custom file font Awesome \\\-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--/// custom file Style \\\-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Start the section loading page -->
+    <section class="section_loading_page">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </section>
+
+    <!--/// start of header \\\-->
+    <header>
+      <div class="main_header">
+        <div class="logo">
+          <img src="images/logo.png" alt="imageLogo" />
+        </div>
+        <div class="links" id="links">
+          <a href="#">Home </a>
+          <a href="#About">About </a>
+          <a href="#Menu">Menu </a>
+          <a href="#products">Products </a>
+          <a href="#Review">Review </a>
+          <a href="#Contact">Contact </a>
+          <a href="#Blogs">Blogs </a>
+        </div>
+        <div class="bottom">
+          <button onclick="open_links()"  id="burger"><i class="fas fa-outdent"></i></button>
+          <button onclick="search()"><i class="fas fa-search"></i></button>
+          <button onclick="shopping()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="totel"></span>
+          </button>
+        </div>
+        <!-- menu shopping you like -->
+        <div class="test_Show_Items">
+            <div class="col" >
+              <img src="images//cart-item-1.png"  alt="image Test" />
+              <div class="text">
+                <h3> Fresh Coffee </h3>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </p>
+                <span> $20.00 </span>
+                <button>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col" >
+              <img src="images//cart-item-2.png"  alt="image Test" />
+              <div class="text">
+                <h3> Fresh Coffee </h3>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </p>
+                <span> $20.00 </span>
+                <button>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          <button class="btn_buy"> buy now </button>
+        </div>
+        <!-- input search for Item -->
+        <div class="search" id="search">
+          <form action="index.html">
+            <input type="search" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+      </div>
+    </header>
+    <!--/// End of header \\\ -->
+
+    <!--/// start of container \\\-->
+    <section class="container">
+
+      <!--/// start of information \\\-->
+      <div class="information">
+        <div class="main_image">
+          <img src="images/home_image.jpg" width="100%" alt="imageInformation">
+        </div>
+        <div class="text">
+          <h1>Taste the real coffee and start a beautiful day</h1>
+          <p>
+            Coffee in the morning helps increase your focus Give yourself plenty
+            of focus for a strong day
+          </p>
+          <button>Get One</button>
+        </div>
+      </div>
+
+      <!--/// start of about \\\-->
+      <div class="about" id="About">
+        <h2 class="title">About <span>US</span></h2>
+        <div class="list_about">
+          <div class="about_image">
+            <img src="images/About_image.jpg " 
+                width="100%" height="100%" alt="About of coffee" 
+            />
+          </div>
+          <div class="text">
+            <h3>What Makes Our Coffee Special?</h3>
+            <p>
+              ipsum dolor sit amet consectetur adipisicing elit. Quia sapiente
+              doloremque sit maxime veniam. Minus debitis quis soluta iusto
+              deserunt.
+            </p>
+            <p>
+              quia eaque rerum, assumenda omnis iste, dicta tenetur. Voluptates,
+              perspiciatis.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div> 
+
+      <!--/// start of menus \\\-->
+      <div class="menu" id="Menu">
+        <h2 class="title">Menu <span>List</span></h2>
+        <div class="list_items">
+          <div class="item">
+            <img src="images/menu-1.png" alt="image menu" />
+            <h4>Tasty And Healty</h4>
+            <p>$15,55</p>
+            <button id="opne-1">Add To Cart</button>
+          </div>
+          <div class="item">
+            <img src="images/menu-2.png" alt="image menu" />
+            <h4>Tasty And Healty</h4>
+            <p>$17,55</p>
+            <button id="opne-2">Add To Cart</button>
+          </div>
+          <div class="item">
+            <img src="images/menu-3.png" alt="image menu" />
+            <h4>Tasty And Healty</h4>
+            <p>$12,50</p>
+            <button id="opne-3">Add To Cart</button>
+          </div>
+          <div class="item">
+            <img src="images/menu-4.png" alt="image menu" />
+            <h4>Tasty And Healty</h4>
+            <p>$13,25</p>
+            <button>Add To Cart</button>
+          </div>
+          <div class="item">
+            <img src="images/menu-5.png" alt="image menu" />
+            <h4>Tasty And Healty</h4>
+            <p>$10,95</p>
+            <button>Add To Cart</button>
+          </div>
+          <div class="item">
+            <img src="images/menu-6.png" alt="image menu" />
+            <h4>Tasty And Healty</h4>
+            <p>$14,85</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div> 
+
+      <!--/// start of Products \\\-->
+      <div class="products" id="products">
+        <h2 class="title">products</h2>
+        <div class="list_product">
+          <div class="product">
+            <img src="images/product-1.png" alt="" />
+            <h3>Fresh Coffee</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur ipsa perferendis ,</p>
+            <p class="score_product" data-show="#one">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>18.102</span>
+            </p>
+              <span class="price">$15.55</span> 
+
+              <section class="evaluation" id="one">
+                <h4> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>4.4 Out of 5</span>
+                </h4>
+                <p>50 global ratings</p>
+                <div class="items">
+                  <div class="item">
+                    <span> 5 star</span>
+                    <div class="score">
+                      <span data-calc="80%"></span>
+                    </div>
+                    <span>80%</span>
+                  </div>
+                  <div class="item">
+                    <span> 4 star</span>
+                    <div class="score">
+                      <span data-calc="10%"></span>
+                    </div>
+                    <span>10%</span>
+                  </div>
+                  <div class="item">
+                    <span> 3 star</span>
+                    <div class="score">
+                      <span data-calc="7%"></span>
+                    </div>
+                    <span>7%</span>
+                  </div>
+                  <div class="item">
+                    <span> 2 star</span>
+                    <div class="score">
+                      <span data-calc="5%"></span>
+                    </div>
+                    <span>5%</span>
+                  </div>
+                  <div class="item">
+                    <span> 1 star</span>
+                    <div class="score">
+                      <span data-calc="2%"></span>
+                    </div>
+                    <span>2%</span>
+                  </div>
+                </div>
+              </section> 
+          </div>
+          <div class="product">
+            <img src="images/product-2.png" alt="" />
+            <h3>Fresh Coffee</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur ipsa perferendis,</p>
+            <p class="score_product" data-show="#twe">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+              <span>10.200</span>
+            </p>
+              <span class="price" >$15.55</span>
+
+              <section class="evaluation" id="twe">
+                <h4> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>3.7 Out of 5</span>
+                </h4>
+                <p>50 global ratings</p>
+                <div class="items">
+                  <div class="item">
+                    <span> 5 star</span>
+                    <div class="score">
+                      <span data-calc="60%"></span>
+                    </div>
+                    <span>60%</span>
+                  </div>
+                  <div class="item">
+                    <span> 4 star</span>
+                    <div class="score">
+                      <span data-calc="8%"></span>
+                    </div>
+                    <span>8%</span>
+                  </div>
+                  <div class="item">
+                    <span> 3 star</span>
+                    <div class="score">
+                      <span data-calc="6%"></span>
+                    </div>
+                    <span>6%</span>
+                  </div>
+                  <div class="item">
+                    <span> 2 star</span>
+                    <div class="score">
+                      <span data-calc="4%"></span>
+                    </div>
+                    <span>4%</span>
+                  </div>
+                  <div class="item">
+                    <span> 1 star</span>
+                    <div class="score">
+                      <span data-calc="2%"></span>
+                    </div>
+                    <span>2%</span>
+                  </div>
+                </div>
+              </section>
+
+          </div>
+          <div class="product">
+            <img src="images/product-3.png" alt="" />
+            <h3>Fresh Coffee</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur ipsa perferendis ,</p>
+            <p class="score_product" data-show="#three">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>15.502</span>
+            </p>
+              <span class="price" >$15.55</span>
+
+              <section class="evaluation" id="three">
+                <h4> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span> 4.9 Out of 5</span>
+                </h4>
+                <p>50 global ratings</p>
+                <div class="items">
+                  <div class="item">
+                    <span> 5 star</span>
+                    <div class="score">
+                      <span data-calc="90%"></span>
+                    </div>
+                    <span>90%</span>
+                  </div>
+                  <div class="item">
+                    <span> 4 star</span>
+                    <div class="score">
+                      <span data-calc="5%"></span>
+                    </div>
+                    <span>5%</span>
+                  </div>
+                  <div class="item">
+                    <span> 3 star</span>
+                    <div class="score">
+                      <span data-calc="3%"></span>
+                    </div>
+                    <span>3%</span>
+                  </div>
+                  <div class="item">
+                    <span> 2 star</span>
+                    <div class="score">
+                      <span data-calc="1%"></span>
+                    </div>
+                    <span>1%</span>
+                  </div>
+                  <div class="item">
+                    <span> 1 star</span>
+                    <div class="score">
+                      <span data-calc="1%"></span>
+                    </div>
+                    <span>1%</span>
+                  </div>
+                </div>
+              </section>
+
+          </div>
+        </div>
+      </div>
+
+      <!--/// start of Review \\\-->
+      <div class="Review" id="Review">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        <h2 class="title"> CUSTOMER'S 
+          <span> Review </span>
+        </h2>
+        <div class="list-Review">
+          <div class="user">
+            <img src="images/quote-img.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              id a harum quasi voluptatibus.
+            </p>
+            <img src="images/pic-1.png" class="image" alt="image usr" />
+            <h3>joni par</h3>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </span>
+          </div>
+          <div class="user">
+            <img src="images/quote-img.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              id a harum quasi voluptatibus.
+            </p>
+            <img src="images/pic-2.png" class="image" alt="image usr" />
+            <h3>Sarah par</h3>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <div class="user">
+            <img src="images/quote-img.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              id a harum quasi voluptatibus.
+            </p>
+            <img src="images/pic-3.png" class="image" alt="image usr" />
+            <h3>Mande par</h3>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </span>
+          </div>
+          <div class="user">
+            <img src="images/quote-img.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              id a harum quasi voluptatibus.
+            </p>
+            <img src="images/pic-1.png" class="image" alt="image usr" />
+            <h3>joni par</h3>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </span>
+          </div>
+          <div class="user">
+            <img src="images/quote-img.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              id a harum quasi voluptatibus.
+            </p>
+            <img src="images/pic-2.png" class="image" alt="image usr" />
+            <h3>Sarah par</h3>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <div class="user">
+            <img src="images/quote-img.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              id a harum quasi voluptatibus.
+            </p>
+            <img src="images/pic-3.png" class="image" alt="image usr" />
+            <h3>Mande par</h3>
+            <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="active_btn" data-info="0"></button>
+          <button data-info="-385"></button>
+          <button data-info="-770"></button>
+          <button data-info="-1155"></button>
+        </div>
+        
+      </div>
+
+      <!--/// start of Contact \\\-->
+      <div class="Contact" id="Contact">
+        <h2 class="title"> Contact </h2>
+        <div class="row">
+          <div class="col">
+            <form action="CoffeWebsite.html">
+              <h3>Login</h3>
+              <input type="email" placeholder="Enter your Email" />
+              <input type="password" placeholder="Your password" />
+              <p>
+                <a href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://www.google.com"
+                  ><i class="fab fa-google"></i
+                ></a>
+              </p>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--/// start of Blogs \\\-->
+      <div class="Blogs" id="Blogs">
+        <h2 class="title"> The
+        <span> Blogs </span>
+        </h2>
+        <div class="row">
+          <div class="col">
+            <div class="image">
+              <img src="images/blog-1.jpeg" alt=" imageBlogs">
+            </div>
+            <div class="text">
+              <h3>Tasty And Refreshing Coffee</h3>
+              <h4>By Admin / 21st May, 2021</h4>
+              <p>
+                Lorem Ipsum Dolor Sit Amen Consenter Adipisicing Elite. Non,
+                Dicta.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="image">
+              <img src="images/blog-2.jpeg"  alt=" imageBlogs">
+            </div>
+            <div class="text">
+              <h3>Tasty And Refreshing Coffee</h3>
+              <h4>By Admin / 21st May, 2021</h4>
+              <p>
+                Lorem Ipsum Dolor Sit Amen Consenter Adipisicing Elite. Non,
+                Dicta.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="image">
+              <img src="images/blog-3.jpeg" alt=" imageBlogs">
+            </div>
+            <div class="text">
+              <h3>Tasty And Refreshing Coffee</h3>
+              <h4>By Admin / 21st May, 2021</h4>
+              <p>
+                Lorem Ipsum Dolor Sit Amen Consenter Adipisicing Elite. Non,
+                Dicta.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- the section is show the image for products -->
+      <section class="product_show_img">
+        <div class="item">
+          <img src="images/product-1.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aliquid commodi consequuntur ratione molestiae veniam doloribus 
+            at harum minima itaque? Deserunt veritatis in quasi quam fugiat 
+            nihil nisi voluptatibus facilis cupiditate!
+            </p>
+            <button class="close_show_img" onclick="close_show_img()">
+              <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+      </section>
+    
+    </section>
+    <!--///  End for container \\\ -->
+    
+    <!--///  start of Footer \\\ -->
+    <footer>
+      <div class="links">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/feed/"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+      </div>
+      <p>
+        Created By Web Designer {<span> Elkashef </span> } All Rights Reserved
+      </p>
+    </footer>
+    <!--///  End of Footer \\\ -->
+
+    <!-- custom file java script -->
+    <script src="js/coffe.js"></script>
+    <!-- custom file jquery  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- custom file Vuo.js -->
+    <script src="js/vue.js"></script>
+  </body>
+</html>
